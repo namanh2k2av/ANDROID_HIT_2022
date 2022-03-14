@@ -27,7 +27,6 @@ public class Fragment1 extends Fragment {
                 username_f2.setText(username_f1.getText().toString());
                 EditText password_f2 = getActivity().findViewById(R.id.password_f2);
                 password_f2.setText(password_f1.getText().toString());
-
             }
         });
         return view;
