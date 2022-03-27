@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".InfoMonan">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#D38615"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        >
+
+        <ImageView
+            android:id="@+id/exit"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_baseline_keyboard_arrow_left_24"
+            ></ImageView>
+
+        <TextView
+            android:id="@+id/namemonan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:gravity="center"
+            android:text="Tên món ăn"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            ></TextView>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_baseline_download_24"
+            ></ImageView>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E4CC82"
+        >
+        <LinearLayout
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            >
+            <ImageView
+                android:id="@+id/img_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                ></ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Nguyên liệu"
+                android:textSize="24dp"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:textStyle="bold"></TextView>
+            
+            <TextView
+                android:id="@+id/textNL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Công thức"
+                android:textSize="24dp"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/textCT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Chi phí"
+                android:textSize="24dp"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/textCP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/black"></TextView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
